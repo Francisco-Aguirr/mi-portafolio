@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import '../styles/estilos.css';
 import Card from 'react-bootstrap/Card';
 import img3 from '../imagenes/yop.jpg';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -13,7 +14,6 @@ const AboutMe = () => {
   return (
     
     <div className='container'>
-      
       <div className='About-body container'>
       <Card className='aboutMe-card'>
       <Card.Header>
@@ -33,9 +33,12 @@ const AboutMe = () => {
       </Card.Header>
       <Card.Body>
         <Card.Title></Card.Title>
-        <Card.Text>
-        Almost without knowing it, in every job I've had I've been implementing AGILE methodologies.
-        Programming was always on my to-do list. In the projects you'll see I was able to adapt my previous experiences to technology.
+        <Card.Text className='texto-carta'>
+        I'm the result of my desitions,
+        At this point in my life I can say that I am the type of person 
+        that I hoped to be when I was a child.. <br />
+        Below I will tell you about the experiences that I consider have helped me grow mentally,
+        spiritually and intellectually.
         </Card.Text>
       </Card.Body>
     </Card>
@@ -49,7 +52,7 @@ const AboutMe = () => {
       <div className='container-2 left-container'>
         <img src={img3} alt="" />
         <div className='text-box'>
-          <h2>About me</h2>
+          <h2>A Travel Of Life</h2>
           <small>2008-2010</small>
           <p>This year I took a trip that changed my life, mindset and personality. 
             For two years I lived between Argentina, Brazil and Uruguay serving as a volunteer missionary for the Church of Jesus Christ LDS. 
@@ -64,7 +67,7 @@ const AboutMe = () => {
       <div className='container-2 right-container'>
         <img src={img3} alt="" />
         <div className='text-box'>
-          <h2>About me</h2>
+          <h2>Missing People</h2>
           <small>2010</small>
           <p>The death of my grandmother was a hard moment,
              her departure motivated me to get closer to my family 
@@ -76,7 +79,7 @@ const AboutMe = () => {
       <div className='container-2 left-container'>
         <img src={img3} alt="" />
         <div className='text-box'>
-          <h2>About me</h2>
+          <h2>New Beginning</h2>
           <small>2016</small>
           <p>
             My marriage. Since I was a child I wanted to have my own home, 
@@ -91,7 +94,7 @@ const AboutMe = () => {
       <div className='container-2 right-container'>
         <img src={img3} alt="" />
         <div className='text-box'>
-          <h2>About me</h2>
+          <h2>Fatherhood</h2>
           <small>2017</small>
           <p>The birth of my first daughter. For many, fatherhood is a burden, a delay. 
              For me it has been a boost in every aspect, both in working life and in intellectual growth. Since that day I have accomplished more than I had in the previous 27 years. I did 3 years of university,
@@ -103,7 +106,7 @@ const AboutMe = () => {
       <div className='container-2 left-container'>
         <img src={img3} alt="" />
         <div className='text-box'>
-          <h2>About me</h2>
+          <h2>Appreciating Life</h2>
           <small>2021</small>
           <p>The birth of my second daughter represented a real challenge and was a beacon of hope for us. 
             Being born in the middle of the pandemic, with my wife and I positive for Covid19, 
@@ -116,7 +119,7 @@ const AboutMe = () => {
       <div className='container-2 right-container'>
         <img src={img3} alt="" />
         <div className='text-box'>
-          <h2>About me</h2>
+          <h2>Refocus</h2>
           <small>2022</small>
           <p>We moved to Europe. A total change that has recharged my motivation,
              my dreams and aspirations have been reborn. My goals are now higher. </p>
@@ -138,7 +141,9 @@ const AboutMe = () => {
       </div>
 
     </div>
+    <div className='boton-arriba'><ScrollToTopButton/></div>
     
+    <br /><br />
     </div>
     
     

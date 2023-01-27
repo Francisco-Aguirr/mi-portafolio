@@ -28,7 +28,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+.texto-carta{
+    font-size: 20px;
+}
 .timeline{
     position: relative;
     max-width: 1200px;
@@ -39,6 +41,9 @@
     position: relative;
     width: 50%;
     
+}
+.boton-arriba{
+    text-align: center;
 }
 
 
