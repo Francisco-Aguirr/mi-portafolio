@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import '../styles/estilos.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import img1 from '../imagenes/yop.jpg';
 import {Link} from "react-router-dom"
+import Timer from '../components/Timer';
+
+
 const Home = () => {
   return (
     <div className='bg-home'>
@@ -48,7 +51,7 @@ const Home = () => {
                 <Card.Body>
                     <Card.Title>I invite you to contact me</Card.Title>
                     <Card.Footer>
-                    <small className="text-muted">You have been knowing me 4:23 minutes.</small>
+                    <small className="text-muted">You have been knowing me<Timer/></small>
                     </Card.Footer>
                     <Card.Text>
                     I think I deserve a call.  Find here some ways you can contact me. 
@@ -58,6 +61,7 @@ const Home = () => {
             </Card>
         </div>
       </div>
+      
     </div>
   )
 }

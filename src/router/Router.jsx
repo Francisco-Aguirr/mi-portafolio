@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {History} from 'react';
 
-import { BrowserRouter, Route, Routes} from "react-router-dom" 
+import { BrowserRouter, Route, Routes} from "react-router-dom" ;
 import AboutMe from '../vistas/AboutMe';
 import AboutMyProjects from '../vistas/AboutMyProjects';
 import Contactme from '../vistas/Contactme';
