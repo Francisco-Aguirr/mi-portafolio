@@ -13,6 +13,7 @@ import img10 from '../imagenes/211675191-06e40e24-c09c-4a44-8520-b855f63c51da.pn
 import img11 from '../imagenes/Captura de pantalla de 2023-01-20 10-36-53.png'
 import img12 from '../imagenes/Captura de pantalla de 2023-01-27 10-28-56.png'
 import { Link } from 'react-router-dom';
+import {FaReact} from "@react-icons/all-files/fa/FaReact";
 
 const AboutMyProjects = () => {
   return (
@@ -117,7 +118,7 @@ const AboutMyProjects = () => {
                 <div className="link">
                     <a href="https://github.com/Francisco-Aguirr/Primera-landing-con-React" target="_blank">GitHub</a>
                     <a href="https://primera-landing-con-react-rhnk.vercel.app/" target="_blank">Web</a>
-                </div>
+                </div>     
             </div>
         </div>
         <div className="cardi">

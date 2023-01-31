@@ -1,6 +1,9 @@
 import React from 'react'
 import Alerta from '../components/Alert';
 import '../styles/estilos.css';
+import Contact from '../components/Contact';
+import {FaWhatsapp} from "@react-icons/all-files/fa/FaWhatsapp";
+import {FaLinkedin} from "@react-icons/all-files/fa/FaLinkedin";
 
 
 const Contactme = () => {
@@ -22,8 +25,8 @@ const Contactme = () => {
           </form>
           <div className="col-md-3 col-sm-12 menu">
             <ul>
-              <li>Link Uno</li>
-              <li>link dos</li>
+              <li> <FaWhatsapp/></li>
+              <a href="https://www.linkedin.com/in/francisco-aguirrer/" target="_blank"><li><FaLinkedin/></li></a> 
               <li>link 3</li>
               <li>link 4</li>
             </ul>

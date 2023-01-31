@@ -5,6 +5,12 @@ import Button from 'react-bootstrap/Button';
 import img1 from '../imagenes/yop.jpg';
 import {Link} from "react-router-dom"
 import Timer from '../components/Timer';
+import Progresshtml from '../components/Progress';
+import Progresscss from '../components/Progresscss';
+import Progressjs from '../components/Progressjs';
+import Progressreact from '../components/Progressreact';
+import Progressphp from '../components/Progresphp';
+import Progresslaravel from '../components/Progresslaravel';
 
 
 const Home = () => {
@@ -18,8 +24,22 @@ const Home = () => {
             <Card.Title>Francisco Aguirre</Card.Title>
             <Card.Text>
             I’m a Full Stack Developer, and a passionate about building beauty and responsive websites. In my own way of learning I’ve participate in the creation of websites from the design based on customers’ requirements to the code.
-            <br/>Let’s talk about it.  
+            <br/>My technologies skills.  
             </Card.Text>
+            <div className="progres">
+              <small>Html5:</small>
+              <Progresshtml/>
+              <small>CSS:</small>
+              <Progresscss/>
+              <small>JavaScript:</small>
+              <Progressjs/>
+              <small>React:</small>
+              <Progressreact/>
+              <small>PHP:</small>
+              <Progressphp/>
+              <small>Laravel:</small>
+              <Progresslaravel/>
+            </div>
         </Card.Body>
         </Card>
         </div>
