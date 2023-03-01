@@ -7,7 +7,7 @@ function Alerta() {
         'success',
       ].map((variant) => (
         <Alert key={variant} variant={variant}>
-        I'm happy you got here. you can use any of the following ways to contact me.
+        I'm happy you got here. Please send me an Email, I will contact you as soon as possible.
         Let's develop great ideas together.
         </Alert>
       ))}

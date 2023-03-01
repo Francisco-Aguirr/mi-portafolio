@@ -1,29 +1,37 @@
-import React from 'react'
 import Alerta from '../components/Alert';
 import '../styles/estilos.css';
 import Contact from '../components/Contact';
-import {FaWhatsapp} from "@react-icons/all-files/fa/FaWhatsapp";
-import {FaLinkedin} from "@react-icons/all-files/fa/FaLinkedin";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 const Contactme = () => {
-  return (
-    <div className='container contact-container'>
-      <br /><br />
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ba4z15v', 'template_vd1wewe', form.current, 'z58phr_bLD1LA70kW')
+      .then((result) => {
+          alert("correo enviado");
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+  
+  return ( 
+    <div className='container contact-container-2'>
+      <br />
       <Alerta/>
-      <div className="col-md-9 col-sm-12 menu contact-container-2">
-          <form className="join-form" action="" method='POST'>
-            <div className="join-form">
-              <p>Name:</p>
-              <input type="text" name='name' required className="inputs"/><br />
-              <p>E-mail:</p>
-              <input type="text" name='email' required className="inputs"/><br />
-              <p>Message:</p>
-              <textarea type="text" name='textarea' className='inputs' cols="40" rows="30"></textarea><br />
-              <button className="btn-join-form">Send</button>
-            </div>
-          </form>
-      </div>
+      <form className="join-form field" ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input className="inputs" type="text" name="user_name" />
+        <label>Email</label>
+        <input className="inputs" type="email" name="user_email" />
+        <label>Message</label>
+        <textarea className="inputs text-area" name="message" />
+        <input type="submit" value="Send" />
+      </form>    
     </div>
   )
 }

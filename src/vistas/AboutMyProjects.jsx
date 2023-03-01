@@ -18,8 +18,9 @@ import {FaReact} from "@react-icons/all-files/fa/FaReact";
 
 const AboutMyProjects = () => {
   return (
-    <div className='container projects-container'>
-         <div className='About-body container'>
+    <div className='container'>
+        <div className='projects-container'>
+        <div className='About-body container'>
                 <Card className='aboutMe-card'>
                 <Card.Header>
                   <Nav variant="tabs" defaultActiveKey="#first">
@@ -47,7 +48,7 @@ const AboutMyProjects = () => {
                   </Card.Text>
                 </Card.Body>
                 </Card>
-            </div>
+        </div>
         <div className="cardi">
             <div className="face front">
                 <img src={img5} alt="" />
@@ -213,11 +214,12 @@ const AboutMyProjects = () => {
                 </div>
             </div>
         </div>
-        <br /><br />
-        <div className="boton-arriba">
-         <ScrollToTopButton/>
         </div>
-        
+        <br />
+        <div className="boton-arriba">
+        <ScrollToTopButton/>
+        </div>
+        <br />
     </div>
   )
 }
