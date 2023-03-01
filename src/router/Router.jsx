@@ -6,6 +6,7 @@ import AboutMyProjects from '../vistas/AboutMyProjects';
 import Contactme from '../vistas/Contactme';
 import Home from '../vistas/Home';
 
+
 const Router = () => {
   return (
     <BrowserRouter>
@@ -15,7 +16,6 @@ const Router = () => {
             <Route path="/AboutMe" element= {<AboutMe/>}/>
             <Route path="/AboutMyProjects" element= {<AboutMyProjects/>}/>
             <Route path="/Contactme" element= {<Contactme/>}/>
-           
         </Routes>
         
         </BrowserRouter>

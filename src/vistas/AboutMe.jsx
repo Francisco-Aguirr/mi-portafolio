@@ -127,19 +127,6 @@ const AboutMe = () => {
                 </div>
               </div>
 
-              <div className='container-2 left-container'>
-                <img src={img3} alt="" />
-                <div className='text-box'>
-                  <h2>About me</h2>
-                  <small>2022</small>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Nihil mollitia facere dolores atque, delectus labore eos iure deserunt corporis 
-                    perferendis aliquid minus maiores asperiores molestiae accusamus placeat, 
-                    eum officiis dolor.</p>
-                    <span className='left-container-arrow'></span>
-                </div>
-              </div>
-
           </div>
           <div className='boton-arriba'>
             <ScrollToTopButton/>

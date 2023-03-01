@@ -270,7 +270,7 @@ transform: perspective(600px) rotateY(180deg);
     color: white;
     background-color: #1762A7;
     margin-top: 20px;
-    width: 350px;
+    width: 250px;
     height: 30px;
     border: none;
     border-radius: 5px;
@@ -294,7 +294,7 @@ transform: perspective(600px) rotateY(180deg);
     display: flex;
     flex-direction: row;
 }
-@media screen and (max-width: 600px ){
+@media screen and (min-width: 320px ){
     .contact-container-2{
         flex-direction: column;
     }
@@ -302,6 +302,45 @@ transform: perspective(600px) rotateY(180deg);
         width: 100%;
     }
     .inputs{
+        width: 200px;
+    }
+    .btn-join-form{
+        width: 200px;
+    }
+}
+@media screen and (min-width: 425px ){
+    .contact-container-2{
+        flex-direction: column;
+    }
+    .join-form{
+        width: 100%;
+    }
+    .inputs{
+        width: 220px;
+    }
+    .btn-join-form{
+        width: 220px;
+    }
+}
+@media screen and (min-width: 768px ){
+    .inputs{
         width: 250px;
+    }
+    .join-form{
+        width: 100%;
+    }
+    .btn-join-form{
+        width: 250px;
+    }
+}
+@media screen and (min-width: 1024px ){
+    .inputs{
+        width: 350px;
+    }
+    .join-form{
+        width: 100%;
+    }
+    .btn-join-form{
+        width: 350px;
     }
 }

@@ -12,6 +12,7 @@ import img9 from '../imagenes/Captura de pantalla de 2023-01-20 10-20-47.png'
 import img10 from '../imagenes/211675191-06e40e24-c09c-4a44-8520-b855f63c51da.png'
 import img11 from '../imagenes/Captura de pantalla de 2023-01-20 10-36-53.png'
 import img12 from '../imagenes/Captura de pantalla de 2023-01-27 10-28-56.png'
+import img13 from '../imagenes/Captura de pantalla de 2023-03-01 09-41-03.png'
 import { Link } from 'react-router-dom';
 import {FaReact} from "@react-icons/all-files/fa/FaReact";
 
@@ -191,6 +192,24 @@ const AboutMyProjects = () => {
                 <div className="link">
                     <a href="https://github.com/Francisco-Aguirr/mi-portafolio" target="_blank">GitHub</a>
                     <a href="https://www.figma.com/file/GuBQU7bDUTGJk8DMgis9NR/My-portafolio?node-id=18%3A39&t=esJUi5IgaYJO6Cn2-0" target="_blank">Figma</a>
+                </div>
+            </div>
+        </div>
+        <div className="cardi">
+            <div className="face front">
+                <img src={img13} alt="" />
+                <h3>Colombia Shop</h3>
+            </div>
+            <div className="face back">
+                <h3>Colombia Shop</h3>
+                <p> 
+                    This was our final project, it consisted of making a marketplace for the Colombian community in Barcelona.
+                    Developed in React and Laravel, being a Full-Stack project that mixes the most modern technologies of web development..  <br /><br />
+                    Project Links: 
+                </p>
+                <div className="link">
+                    <a href="https://github.com/Francisco-Aguirr/colombia-shop-back" target="_blank">GitHub</a>
+                    <a href="https://www.figma.com/file/dChaXbdXPk75qA4iDOQNyK/Colombia-Shop?node-id=12%3A203&t=0zIrfWcUvM5i8uQn-0" target="_blank">Figma</a>
                 </div>
             </div>
         </div>
